@@ -1,15 +1,20 @@
 .character{
   width: 100px;
-  height: 100px;
+  height: 38px;
   position:absolute;
   bottom: 20%;
   left: 10%;
-  background-image: url('mario.webp');
-  background-size: cover;
+  background-image: url('Sky.png');
+  background-size: contain;
 }
 
 .jump{
   animation: jump 1000ms forwards;
+}
+
+.bg{
+  background-image: url(background.png);
+  background-size: auto 100vh;
 }
 
 
