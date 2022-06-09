@@ -1,10 +1,10 @@
 .character{
-  width: 100px;
-  height: 38px;
+  width: 200px;
+  height: 180px;
   position:absolute;
   bottom: 20%;
-  left: 10%;
-  background-image: url('Sky.png');
+  left: 15%;
+  background-image: url('character.PNG');
   background-size: contain;
 }
 
@@ -13,17 +13,36 @@
 }
 
 .bg{
-  background-image: url(background.png);
-  background-size: auto 100vh;
+  background-image: url(gamebackground.jpg);
+  background-size: auto 100vh; 
+}
+
+.enemy{
+  width: 200px;
+  height: 170px;
+  position:absolute;
+  bottom: 20%;
+  right: 30%;
+  background-image: url('Nemy.png');
+  background-size: contain;
+  animation: noa 9000ms forwards;
 }
 
 
+
 @keyframes  jump {
-    50%{
-      bottom: 60%;
-    }
-    100%{
-      bottom: 20%;
-      transform: rotate(-360deg);
-    }
+  50%{
+    bottom: 60%;
+  }
+  100%{
+    bottom: 20%;
+    transform: rotate(-360deg);
+  }
+}
+
+@keyframes  noa {
+  100%{
+    right: 100%;
+    transform: rotate(-360deg);
+  }
 }
