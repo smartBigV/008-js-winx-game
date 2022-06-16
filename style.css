@@ -7,25 +7,36 @@
   background-image: url('character.PNG');
   background-size: contain;
 }
+.Adele{
+  width: 250px;
+  height: 200px;
+  background-image: url(Adele.png);
+}
 
 .jump{
   animation: jump 1000ms forwards;
 }
 
 .bg{
-  background-image: url(gamebackground.jpg);
+  background-image: url(mybackground.jpg);
   background-size: auto 100vh; 
+
+  animation: move 5s linear infinite;
 }
 
+
+
 .enemy{
-  width: 200px;
-  height: 170px;
+  width: 210px;
+  height: 180px;
   position:absolute;
   bottom: 20%;
   right: 30%;
-  background-image: url('Nemy.png');
+  background-image: url('Nemyy.png');
   background-size: contain;
-  animation: noa 9000ms forwards;
+  animation: noa 2000ms infinite;
+
+  
 }
 
 
@@ -36,13 +47,33 @@
   }
   100%{
     bottom: 20%;
-    transform: rotate(-360deg);
+    transform: rotate(-360deg); 
+    
+
   }
 }
 
 @keyframes  noa {
   100%{
     right: 100%;
-    transform: rotate(-360deg);
+  }
+}
+
+@keyframes moveback{
+
+0%{
+  background-position: 0px 0;
+}
+100%{
+  background-position: -2000px 0;
+}
+}
+
+@keyframes move{
+  0%{
+    background-position: 0px 0;
+  }
+  100%{
+    background-position: -2000px 0;
   }
 }
